@@ -12,7 +12,7 @@ setup(
     name="exif-viewer",
     version="1.0.0",
     author="mituba4154",
-    description="Pythonで写真のEXIFデータをタグごとに選択して出力できるアプリ",
+    description="Pythonで写真のEXIFデータをタグごとに選択して出力できるアプリ（CLI＋GUI版）",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/mituba4154/EXIF_deta",
@@ -38,6 +38,7 @@ setup(
     entry_points={
         "console_scripts": [
             "exif-viewer=exif_viewer:main",
+            "exif-viewer-gui=exif_gui:main",
         ],
     },
 )
